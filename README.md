@@ -83,10 +83,7 @@ User can type correctly:
 
 ### Sources
 
-This program is implemented for the hackaton. The requirements for this task (in polish) are defined here: 
-
->github.com/ritaly/pycodeme22 - [Propozycje zadań warsztatowych](https://github.com/ritaly/pycodeme22/blob/main/hackaton_1/README.md)
-<br>('Wisielec' heading)
+This program is implemented for the hackaton.
 
 Documentation that helped during implementation:
 - docs.python.org - [Built-in Types](https://docs.python.org/3/library/stdtypes.html#string-methods)

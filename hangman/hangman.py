@@ -1,12 +1,9 @@
 # Initial variables
 hidden_word = "abracadabra"
-guessed_word = []
-attempts = len(hidden_word)
-
 # Filling our guessed_word list with '_' characters, so later we can assign correctly guessed letters to it's
 # appropriate index.
-for i in range(len(hidden_word)):
-    guessed_word.insert(i, '_')
+guessed_word = ["_"] * len(hidden_word)
+attempts = len(hidden_word)
 
 print(f"The hidden word has {len(hidden_word)} letters.")
 print("You can type 'exit' to quit.")
@@ -31,6 +28,7 @@ for attempt in range(attempts):
                 i = 0
                 # Add correctly guessed letter to it's appropriate index in guessed_word list, so it can be shown after
                 # current attempt.
+                # Use Enumerate (?)
                 for letter in hidden_word:
                     if guessed_letter == letter:
                         guessed_word[i] = guessed_letter
@@ -44,7 +42,6 @@ for attempt in range(attempts):
     # 2. When user doesn't provide input ('Enter' key), user will just lose one attempt.
     elif len(guessed_letter) < 1:
         print("You didn't provide any letter.")
-        pass
     # 3. User can quit the program typing 'exit' word.
     elif guessed_letter == "exit":
         print("You have quit.")
@@ -56,7 +53,6 @@ for attempt in range(attempts):
             exit(0)
         else:
             print("You missed - that's not the hidden word. Try again.")
-            pass
 
     # Already guessed letters occurrences of the hidden word are shown after every attempt.
     print("[" + "".join(guessed_word) + "]", "\n")
@@ -64,5 +60,3 @@ for attempt in range(attempts):
     if guessed_word == list(hidden_word):
         print(f"You guessed the hidden word! It's '{hidden_word}'!")
         exit(0)
-    else:
-        pass
