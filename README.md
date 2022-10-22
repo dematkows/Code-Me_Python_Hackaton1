@@ -19,12 +19,13 @@ From the list of given tasks at least one task (of my choice) had to be implemen
 ## Hangman
 
 ### Table of contents
+
 * [Introduction](#introduction)
-* [Project status](#project status)
+* [Project status](#project-status)
 * [Technologies](#technologies)
-* [Solution concept](#solution concept)
+* [Solution concept](#solution-concept)
 * [Requirements](#requirements)
-* [Run the program](#run the program)
+* [Run the program](#run-the-program)
 * [Usage](#usage)
 * [Sources](#sources)
 
