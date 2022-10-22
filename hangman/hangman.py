@@ -16,7 +16,7 @@ for attempt in range(attempts):
     attempts_left = attempts - attempt
 
     print(f"Attempts left: {attempts_left}")
-    guessed_letter = input("Give a letter or guess the whole word: ")
+    guessed_letter = input("Give a letter or guess the whole word: ").lower()
 
     # User can provide any type of input, even nothing at all (Enter). Every option (I guess) is handled by below 'if'
     # statements.
